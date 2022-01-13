@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: K8S_OCC
+  namespace: service_namespace
+  labels:
+    project.name: K8S_OCC

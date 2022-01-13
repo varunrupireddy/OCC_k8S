@@ -1,0 +1,24 @@
+Commands and assumptions:
+
+
+Kubectl commands to deploy the services:
+-----------------------------------------
+kubectl create -f deployment.yml --namespace namespace_name
+kubectl create -f configmap.yml --namespace namespace_name
+kubectl create -f ingress.yml --namespace namespace_name
+kubectl create -f service.yml --namespace namespace_name
+
+
+
+
+Assumptions made:
+-------------------
+
+- Few of the assumptions is defined in the docker file as we are creating the image out of the docker file. 
+- Assume kubernetes cluster is installed already. 
+
+
+I do not have a great experience with prometheus and grafana before. I will use some online help as below to make sure the integration works and displays all the logs.
+
+https://sysdig.com/blog/kubernetes-monitoring-prometheus/
+https://grafana.com/grafana/dashboards/315
